@@ -15,6 +15,9 @@ module.exports = {
       backgroundColor: {
         'hero': "#2a2219", 
         'button': '#0c253a'
+      }, 
+      borderColor: {
+        'gold': '#86724c'
       }
     },
   },
