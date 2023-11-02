@@ -1,6 +1,6 @@
 'use client'; 
 
-import { createContext, useContext, Dispatch, SetStateAction, useState } from "react";
+import { createContext, useContext, useState } from "react";
 
 export const Context = createContext(); 
 export const ContextProvider = ({ children }) => {
@@ -13,9 +13,18 @@ export const ContextProvider = ({ children }) => {
     const [ attributes, setAttributes ] = useState({})
 
     return (
-        <Context.Provider value={{ race, setRace, subRace, setSubRace, playerClass, 
-        setPlayerClass, cantrips, setCantrips, spells, setSpells, feats, setFeats, attributes, setAttributes }}>
+        <Context.Provider value={[
+            race, setRace, 
+            subRace, setSubRace, 
+            playerClass, setPlayerClass, 
+            cantrips, setCantrips, 
+            spells, setSpells, 
+            feats, setFeats, 
+            attributes, setAttributes 
+            ]}>
             { children }
         </Context.Provider>
     );
 }
+
+export const useGlobalContext = () => useContext(Context)
