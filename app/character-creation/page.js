@@ -1,5 +1,9 @@
+import Races from "@/components/races";
+
 export default function CharacterCreation() {
     return(
-        <div>Character Creation</div>
+        <div>
+            <Races></Races>
+        </div>
     );
 }
