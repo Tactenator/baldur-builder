@@ -11,8 +11,15 @@ import HalfOrc from '../public/images/race/half-orc/Race_Half-Orc.png'
 import Halfling from '../public/images/race/halfling/Race_Halfling.png'
 import Tiefling from '../public/images/race/tiefling/Race_Tiefling.png'
 
+import { useState, useContext } from 'react';
+import { Context } from '@/app/Context';
+
 
 const Races = () => {
+
+    const [ race, setRace ] = useContext(Context);
+
+
     return ( 
         <div className="bg-hero p-10 w-2/5 border-8 border-gold">
             <div className="text-center text-3xl text-gold font-bold pb-10 ">Choose your Race</div>
