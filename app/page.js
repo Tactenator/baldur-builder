@@ -10,6 +10,8 @@ export default function Home() {
         <h1 className="">Welcome to Baldurs Gate 3 Builder</h1>
         <h4>A builder to test your ideas for new custom characters in Baldurs Gate 3.</h4>
         <Link href="/character-creation" className="bg-button px-7 py-3 border-4 border-gold rounded-md">Start Building</Link>
+        <p>Looking for chaos? Try our randomizer!</p>
+        <button>Randomize!</button>
       </div>
     </main>
   )
