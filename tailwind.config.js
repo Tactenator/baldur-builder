@@ -19,6 +19,9 @@ module.exports = {
       }, 
       borderColor: {
         'gold': '#86724c'
+      }, 
+      colors: {
+        'gold': '#86724c'
       }
     },
   },

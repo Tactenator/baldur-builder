@@ -14,20 +14,20 @@ import Tiefling from '../public/images/race/tiefling/Race_Tiefling.png'
 
 const Races = () => {
     return ( 
-        <div className="bg-hero p-10 w-1/4 border-8 border-gold">
-            <div className="text-center">Choose your Race</div>
-            <div className="grid grid-cols-4">
-                <Image src={Elf} alt='Human' width={100} height={100}></Image>
-                <Image src={Tiefling} alt='Human' width={100} height={100}></Image>
-                <Image src={Drow} alt='Human' width={100} height={100}></Image>
-                <Image src={Human} alt='Human' width={100} height={100}></Image>
-                <Image src={Githyanki} alt='Human' width={100} height={100}></Image>
-                <Image src={Dwarf} alt='Human' width={100} height={100}></Image>
-                <Image src={HalfElf} alt='Human' width={100} height={100}></Image>
-                <Image src={Halfling} alt='Human' width={100} height={100}></Image>
-                <Image src={Gnome} alt='Human' width={100} height={100}></Image>
-                <Image src={DragonBorn} alt='Human' width={100} height={100}></Image>
-                <Image src={HalfOrc} alt='Human' width={100} height={100}></Image>
+        <div className="bg-hero p-10 w-2/5 border-8 border-gold">
+            <div className="text-center text-3xl text-gold font-bold pb-10 ">Choose your Race</div>
+            <div className="grid grid-cols-4 gap-10">
+                <Image className='hover:opacity-50 hover:cursor-pointer' src={Elf} alt='Human' width={100} height={100}></Image>
+                <Image className='hover:opacity-50 hover:cursor-pointer' src={Tiefling} alt='Human' width={100} height={100}></Image>
+                <Image className='hover:opacity-50 hover:cursor-pointer' src={Drow} alt='Human' width={100} height={100}></Image>
+                <Image className='hover:opacity-50 hover:cursor-pointer' src={Human} alt='Human' width={100} height={100}></Image>
+                <Image className='hover:opacity-50 hover:cursor-pointer' src={Githyanki} alt='Human' width={100} height={100}></Image>
+                <Image className='hover:opacity-50 hover:cursor-pointer' src={Dwarf} alt='Human' width={100} height={100}></Image>
+                <Image className='hover:opacity-50 hover:cursor-pointer' src={HalfElf} alt='Human' width={100} height={100}></Image>
+                <Image className='hover:opacity-50 hover:cursor-pointer' src={Halfling} alt='Human' width={100} height={100}></Image>
+                <Image className='hover:opacity-50 hover:cursor-pointer' src={Gnome} alt='Human' width={100} height={100}></Image>
+                <Image className='hover:opacity-50 hover:cursor-pointer' src={DragonBorn} alt='Human' width={100} height={100}></Image>
+                <Image className='hover:opacity-50 hover:cursor-pointer' src={HalfOrc} alt='Human' width={100} height={100}></Image>
             </div>
         </div>
      );
