@@ -4,7 +4,7 @@ import { createContext, useContext, useState } from "react";
 
 export const Context = createContext(); 
 export const ContextProvider = ({ children }) => {
-    const [ race, setRace ] = useState('Elf');
+    const [ race, setRace ] = useState([]);
     const [ subRace, setSubRace ] = useState('')
     const [ playerClass, setPlayerClass ] = useState([])
     const [ cantrips, setCantrips ] = useState([])
@@ -21,10 +21,10 @@ export const ContextProvider = ({ children }) => {
             spells, setSpells, 
             feats, setFeats, 
             attributes, setAttributes 
-            ]}>
+        ]}>
             { children }
         </Context.Provider>
     );
 }
 
-export const useGlobalContext = () => useContext(Context)
+export default Context; 

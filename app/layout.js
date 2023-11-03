@@ -13,9 +13,9 @@ export default function RootLayout({ children }) {
       <body>
         <ContextProvider>
           {children}
-          <Footer></Footer>
         </ContextProvider>
-        </body>
+        <Footer></Footer>
+      </body>
     </html>
   )
 }
