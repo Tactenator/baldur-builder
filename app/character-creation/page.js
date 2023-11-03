@@ -1,6 +1,7 @@
 'use client'
 
-import Races from "@/components/races";
+
+import Races from "@/components/builder-files/races";
 import { useState } from "react";
 
 export default function CharacterCreation() {

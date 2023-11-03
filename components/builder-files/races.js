@@ -1,17 +1,17 @@
 'use client'
 
 import Image from 'next/image';
-import Human from '../public/images/race/humans/Race_Human.png'
-import Drow from '../public/images/race/drow/Race_Drow.png'
-import DragonBorn from '../public/images/race/dragonborn/Race_Dragonborn.png'
-import Dwarf from '../public/images/race/dwarf/Race_Dwarf.png'
-import Elf from '../public/images/race/elf/Race_Elf.png'
-import Githyanki from '../public/images/race/githyanki/Race_Githyanki.png'
-import Gnome from '../public/images/race/gnome/Race_Gnome.png'
-import HalfElf from '../public/images/race/half-elf/Race_Half-Elf.png'
-import HalfOrc from '../public/images/race/half-orc/Race_Half-Orc.png'
-import Halfling from '../public/images/race/halfling/Race_Halfling.png'
-import Tiefling from '../public/images/race/tiefling/Race_Tiefling.png'
+import Human from '../../public/images/race/humans/Race_Human.png'
+import Drow from '../../public/images/race/drow/Race_Drow.png'
+import DragonBorn from '../../public/images/race/dragonborn/Race_Dragonborn.png'
+import Dwarf from '../../public/images/race/dwarf/Race_Dwarf.png'
+import Elf from '../../public/images/race/elf/Race_Elf.png'
+import Githyanki from '../../public/images/race/githyanki/Race_Githyanki.png'
+import Gnome from '../../public/images/race/gnome/Race_Gnome.png'
+import HalfElf from '../../public/images/race/half-elf/Race_Half-Elf.png'
+import HalfOrc from '../../public/images/race/half-orc/Race_Half-Orc.png'
+import Halfling from '../../public/images/race/halfling/Race_Halfling.png'
+import Tiefling from '../../public/images/race/tiefling/Race_Tiefling.png'
 
 import { useContext } from 'react';
 import { Context } from '@/app/Context';
