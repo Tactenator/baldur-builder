@@ -18,14 +18,17 @@ import Sorcerer from '../../public/images/classes/Sorcerer.png'
 import Warlock from '../../public/images/classes/Warlock.png'
 import Wizard from '../../public/images/classes/Wizard.png'
 
+import { useGlobalContext } from "@/app/Context";
+
 
 const Classes = () => {
 
-    // const [ playerClass, setPlayerClass ] = useContext(Context)
-    // const [ cantrips, setCantrips ] = useContext(Context)
+    const { playerClass, setPlayerClass } = useGlobalContext()
+
     return ( 
         <div className="bg-hero p-10 w-2/5 border-8 border-gold">
         <div className="text-center text-3xl text-gold font-bold pb-10 ">Choose your Class</div>
+        { playerClass }
         <div className="grid grid-cols-4 gap-10">
             <button onClick={((e) => setPlayerClass(newClass => [...playerClass, 'Barbarian']))} value="Barbarian" ><Image 
             className='hover:opacity-50 hover:cursor-pointer' src={Barbarian} alt='Barbarian' width={100} height={100}></Image></button>

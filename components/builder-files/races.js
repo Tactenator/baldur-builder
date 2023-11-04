@@ -24,7 +24,7 @@ const Races = () => {
     return ( 
         <div className="bg-hero p-10 w-2/5 border-8 border-gold">
             <div className="text-center text-3xl text-gold font-bold pb-10 ">Choose your Race</div>
-
+            { race }
             <div className="grid grid-cols-4 gap-10">
                 <button onClick={((e) => setRace('Elf'))} value="Elf" ><Image value="Elf"
                 className='hover:opacity-50 hover:cursor-pointer' src={Elf} alt='Elf' width={100} height={100}></Image></button>
