@@ -13,12 +13,12 @@ import HalfOrc from '../../public/images/race/half-orc/Race_Half-Orc.png'
 import Halfling from '../../public/images/race/halfling/Race_Halfling.png'
 import Tiefling from '../../public/images/race/tiefling/Race_Tiefling.png'
 
-import { useContext } from 'react';
-import { Context } from '@/app/Context';
+import { useGlobalContext } from '@/app/Context';
+
 
 const Races = () => {
 
-    const [ race, setRace ] = useContext(Context)
+    const { race, setRace } = useGlobalContext()
 
 
     return ( 
