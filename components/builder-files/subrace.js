@@ -6,73 +6,94 @@ const SubRaces = () => {
 
     const { race, subrace, setSubrace } = useGlobalContext()
 
+
+
     return (
         <div>
-            {race === 'Elf' || race === 'Dwarf' || race === 'Drow' || race === 'Tiefling' || race === 'Halfling' || race === "Half-Elf" || race === "Gnome" || race === "Dragonborn" &&
-            <div className="bg-hero p-10 w-2/5 border-8 border-gold">
-            <div className="text-center text-3xl text-gold font-bold pb-10 ">Choose your Race</div>
-            { race === 'Elf' && 
-            <div className="grid grid-cols-2 gap-10">
-                <div>High Elf</div>
-                <div>Wood Elf</div>
-            </div>
+            { subrace}
+            {race === 'Elf' &&
+                <div className="bg-hero p-10 w-2/5 border-8 border-gold">
+                    <div className="text-center text-3xl text-gold font-bold pb-10 ">Choose your Sub Race</div>
+                    <div className="grid grid-cols-2 gap-10">
+                        <div onClick={(() => setSubrace('High-Elf'))}>High Elf</div>
+                        <div onClick={(() => setSubrace('Wood-Elf'))}>Wood Elf</div>
+                    </div>
+                </div>
             }
             { race === 'Dwarf' && 
-            <div className="grid grid-cols-3 gap-10">
-                <div>Hill Dwarf</div>
-                <div>Mountain Dwarf</div>
-                <div>Duergar</div>
+            <div className="bg-hero p-10 w-2/5 border-8 border-gold">
+                <div className="text-center text-3xl text-gold font-bold pb-10 ">Choose your Sub Race</div>
+                    <div className="grid grid-cols-3 gap-10">
+                        <div onClick={(() => setSubrace('Hill Dwarf'))}>Hill Dwarf</div>
+                        <div onClick={(() => setSubrace('Mountain Dwarf'))}>Mountain Dwarf</div>
+                        <div onClick={(() => setSubrace('Duergar'))}>Duergar</div>
+                    </div>
             </div>
             }
             { race === 'Drow' && 
-            <div className="grid grid-cols-2 gap-10">
-                <div>Seladrine Drow</div>
-                <div>Lolth Drow</div>
+            <div className="bg-hero p-10 w-2/5 border-8 border-gold">
+                <div className="text-center text-3xl text-gold font-bold pb-10 ">Choose your Sub Race</div>
+                    <div className="grid grid-cols-2 gap-10">
+                        <div onClick={(() => setSubrace('Seladrine'))}>Seladrine Drow</div>
+                        <div onClick={(() => setSubrace('Lolth'))}>Lolth Drow</div>
+                </div>
             </div>
             }{ race === 'Tiefling' && 
-            <div className="grid grid-cols-3 gap-10">
-                <div>Asmodeus Tiefling</div>
-                <div>Mephistopheles Tiefling</div>
-                <div>Zariel Tiefling</div>
+            <div className="bg-hero p-10 w-2/5 border-8 border-gold">
+                <div className="text-center text-3xl text-gold font-bold pb-10 ">Choose your Sub Race</div>
+                    <div className="grid grid-cols-3 gap-10">
+                        <div onClick={(() => setSubrace('Asmodeus'))}>Asmodeus Tiefling</div>
+                        <div onClick={(() => setSubrace('Mephistopheles'))}>Mephistopheles Tiefling</div>
+                        <div onClick={(() => setSubrace('Zariel'))}>Zariel Tiefling</div>
+                </div>
             </div>
             }
             { race === 'Halfling' && 
-            <div className="grid grid-cols-2 gap-10">
-                <div>Lightfoot Halfling</div>
-                <div>Strongheart Halfling</div>
+            <div className="bg-hero p-10 w-2/5 border-8 border-gold">
+                <div className="text-center text-3xl text-gold font-bold pb-10 ">Choose your Sub Race</div>
+                    <div className="grid grid-cols-2 gap-10">
+                        <div onClick={(() => setSubrace('Lightfoot'))}>Lightfoot Halfling</div>
+                        <div onClick={(() => setSubrace('Strongheart'))}>Strongheart Halfling</div>
+                    </div>
             </div>
             }
-            { race === 'Half-Elf' && 
-            <div className="grid grid-cols-3 gap-10">
-                <div>Wood Half-Elf</div>
-                <div>High Half-Elf</div>
-                <div>Drow Half-Elf</div>
+            { race === 'Half-Elf' &&
+            <div className="bg-hero p-10 w-2/5 border-8 border-gold">
+            <div className="text-center text-3xl text-gold font-bold pb-10 ">Choose your Sub Race</div>
+                <div className="grid grid-cols-3 gap-10">
+                    <div onClick={(() => setSubrace('Wood Half-Elf'))}>Wood Half-Elf</div>
+                    <div onClick={(() => setSubrace('High Half-Elf'))}>High Half-Elf</div>
+                    <div onClick={(() => setSubrace('Drow Half-Elf'))}>Drow Half-Elf</div>
+                </div>
             </div>
             }
             { race === 'Gnome' && 
-            <div className="grid grid-cols-3 gap-10">
-                <div>Rock Gnome</div>
-                <div>Deep Gnome</div>
-                <div>Forest Gnome</div>
+            <div className="bg-hero p-10 w-2/5 border-8 border-gold">
+                <div className="text-center text-3xl text-gold font-bold pb-10 ">Choose your Sub Race</div>
+                <div className="grid grid-cols-3 gap-10">
+                    <div onClick={(() => setSubrace('Rock Gnome'))}>Rock Gnome</div>
+                    <div onClick={(() => setSubrace('Deep Gnome'))}>Deep Gnome</div>
+                    <div onClick={(() => setSubrace('Forest Gnome'))}>Forest Gnome</div>
+                </div>
             </div>
             }
             { race === 'Dragonborn' && 
-            <div className="grid grid-cols-3 gap-10">
-                <div>Black Dragonborn</div>
-                <div>Blue Dragonborn</div>
-                <div>Copper Dragonborn</div>
-                <div>Gold Dragonborn</div>
-                <div>Green Dragonborn</div>
-                <div>Red Dragonborn</div>
-                <div>Brass Dragonborn</div>
-                <div>Bronze Dragonborn</div>
-                <div>Silver Dragonborn</div>
-                <div>White Dragonborn</div>
+            <div className="bg-hero p-10 w-2/5 border-8 border-gold">
+                <div className="text-center text-3xl text-gold font-bold pb-10 ">Choose your Sub Race</div>
+                <div className="grid grid-cols-3 gap-10">
+                    <div onClick={(() => setSubrace('Black Dragonborn'))}>Black Dragonborn</div>
+                    <div onClick={(() => setSubrace('Blue Dragonborn'))}>Blue Dragonborn</div>
+                    <div onClick={(() => setSubrace('Copper Dragonborn'))}>Copper Dragonborn</div>
+                    <div onClick={(() => setSubrace('Gold Dragonborn'))}>Gold Dragonborn</div>
+                    <div onClick={(() => setSubrace('Green Dragonborn'))}>Green Dragonborn</div>
+                    <div onClick={(() => setSubrace('Red Dragonborn'))}>Red Dragonborn</div>
+                    <div onClick={(() => setSubrace('Brass Dragonborn'))}>Brass Dragonborn</div>
+                    <div onClick={(() => setSubrace('Bronze Dragonborn'))}>Bronze Dragonborn</div>
+                    <div onClick={(() => setSubrace('Silver Dragonborn'))}>Silver Dragonborn</div>
+                    <div onClick={(() => setSubrace('White Dragonborn'))}>White Dragonborn</div>
+                </div>
             </div>
-            }
-        </div>
-            }
-            
+            } 
         </div>
         
      );
