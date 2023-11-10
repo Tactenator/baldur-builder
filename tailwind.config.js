@@ -18,7 +18,8 @@ module.exports = {
         'button': '#0c253a'
       }, 
       borderColor: {
-        'gold': '#86724c'
+        'gold': '#86724c', 
+        'button-border': '#86554c'
       }, 
       colors: {
         'gold': '#86724c'
