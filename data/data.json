@@ -1,0 +1,7 @@
+{
+    "fighter": 
+    [{
+        "subclass": ["Battle Master", "Eldritch Knight", "Champion"], 
+        "style": ["Archery", "Defense", "Duelling", "Great Weapon Fighting", "Protection", "Two Weapon Fighting"]
+    }]
+}
