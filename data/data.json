@@ -2,6 +2,16 @@
     "fighter": 
     [{
         "subclass": ["Battle Master", "Eldritch Knight", "Champion"], 
-        "style": ["Archery", "Defense", "Duelling", "Great Weapon Fighting", "Protection", "Two Weapon Fighting"]
+        "style": ["Archery", "Defense", "Duelling", "Great Weapon Fighting", "Protection", "Two Weapon Fighting"], 
+        "levels": 
+        [{
+            "health": 10, 
+            "feature": "Second Wind"
+        },
+        {
+            "health": 20, 
+            "feature": "Action Surge"
+        }
+        ]
     }]
 }

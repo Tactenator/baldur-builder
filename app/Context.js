@@ -8,16 +8,19 @@ const GlobalContext = createContext({
     class: [], 
     setClass: (() => ''), 
     subRace: '', 
-    setSubRace:(() => '')
+    setSubRace:(() => ''), 
+    level: '',
+    setLevel:(() => '')
 })
 
 export const GlobalContextProvider = ({ children }) => {
     const [ race, setRace ] = useState('')
     const [ playerClass, setPlayerClass ] = useState([])
     const [ subRace, setSubRace ] = useState('')
+    const [ level, setLevel ] = useState('1')
 
     return (
-        <GlobalContext.Provider value={{ race, setRace, playerClass, setPlayerClass, subRace, setSubRace }}>
+        <GlobalContext.Provider value={{ race, setRace, playerClass, setPlayerClass, subRace, setSubRace, level, setLevel }}>
             { children }
         </GlobalContext.Provider>
     );
