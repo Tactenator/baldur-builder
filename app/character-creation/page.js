@@ -12,7 +12,7 @@ export default function CharacterCreation() {
 
     return(
         <div className="h-[100vh] bg-[url('../public/images/character-creation.webp')] bg-cover bg-no-repeat bg-center p-10">
-            <Races></Races>
+            <Races ></Races>
             <Classes></Classes>
             <SubRaces></SubRaces>
             <Background />

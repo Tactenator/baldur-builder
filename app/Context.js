@@ -19,10 +19,11 @@ export const GlobalContextProvider = ({ children }) => {
     const [ race, setRace ] = useState('')
     const [ playerClass, setPlayerClass ] = useState([])
     const [ subRace, setSubRace ] = useState('')
+    const [ background, setBackground ] = useState('')
     const [ level, setLevel ] = useState('1')
 
     return (
-        <GlobalContext.Provider value={{ race, setRace, playerClass, setPlayerClass, subRace, setSubRace, level, setLevel }}>
+        <GlobalContext.Provider value={{ race, setRace, playerClass, setPlayerClass, subRace, setSubRace, background, setBackground, level, setLevel }}>
             { children }
         </GlobalContext.Provider>
     );
