@@ -9,6 +9,8 @@ const GlobalContext = createContext({
     setClass: (() => ''), 
     subRace: '', 
     setSubRace:(() => ''), 
+    background: '', 
+    setBackground:(() => ''),
     level: '',
     setLevel:(() => '')
 })

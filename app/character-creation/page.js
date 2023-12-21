@@ -1,5 +1,6 @@
 'use client'
 
+import Background from "@/components/builder-files/background";
 import Classes from "@/components/builder-files/classes";
 import Races from "@/components/builder-files/races";
 import SubRaces from "@/components/builder-files/subrace";
@@ -14,6 +15,7 @@ export default function CharacterCreation() {
             <Races></Races>
             <Classes></Classes>
             <SubRaces></SubRaces>
+            <Background />
         </div>
     );
 }

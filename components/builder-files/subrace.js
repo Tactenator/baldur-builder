@@ -5,9 +5,7 @@ import { useGlobalContext } from '@/app/Context'
 const SubRaces = () => {
 
     const { race, subRace, setSubRace } = useGlobalContext()
-
-
-
+    
     return (
         <div>
             { subRace}
